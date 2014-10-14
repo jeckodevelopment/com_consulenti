@@ -14,6 +14,7 @@ La tabella visualizzata dal componente contiene i seguenti dati relativi ai cons
 - Data inizio incarico
 - Data conclusione incarico
 - Oggetto dell'incarico
-- Importo complessivo in Euro.
+- Importo complessivo in Euro
+
 ====================
 Per informazioni e/o supporto tecnico scrivere a info@jeckodevelopment.com oppure luca.marzo@live.com
