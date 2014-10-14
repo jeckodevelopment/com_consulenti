@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>com_consulenti</name>
+    <creationDate>2014-02-18</creationDate>
+    <copyright>Copyright (C) 2014 Jecko Development. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Luca Marzo</author>
+    <authorEmail>luca.marzo@live.com</authorEmail>
+    <authorUrl>http://www.jeckodevelopment.com</authorUrl>
+    <version>1.0.1</version>
+    <description>art. 15 c. 1, 2 del D. Lgs. 33/2013
+Obblighi di pubblicazione concernenti i titolari di incarichi dirigenziali e di collaborazione o consulenza</description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>consulenti.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <languages folder="site">
+        
+			<language tag="it-IT">language/it-IT.com_consulenti.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_consulenti/assets/images/s_com_consulenti.png" >COM_CONSULENTI</menu>
+        <submenu>
+            
+			<menu link="option=com_consulenti&amp;view=incarichi" view="incarichi" img="components/com_consulenti/assets/images/s_incarichi.png" alt="Consulenti/Incarichi">COM_CONSULENTI_TITLE_INCARICHI</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>consulenti.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            
+			<language tag="it-IT">language/it-IT.com_consulenti.ini</language>
+			<language tag="it-IT">language/it-IT.com_consulenti.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
