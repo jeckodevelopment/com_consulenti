@@ -17,4 +17,3 @@ La tabella visualizzata dal componente contiene i seguenti dati relativi ai cons
 - Importo complessivo in Euro
 
 ====================
-Per informazioni e/o supporto tecnico scrivere a info@jeckodevelopment.com oppure luca.marzo@live.com
